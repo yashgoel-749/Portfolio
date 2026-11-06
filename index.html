@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2354f4" />
+    <meta
+      name="description"
+      content="Yash Goel — full-stack developer and Computer Science student. Explore SyncSave, LinkFlow, and an e-commerce storefront built with React, TypeScript, Node.js, and PostgreSQL."
+    />
+    <meta property="og:title" content="Yash Goel — Code with purpose." />
+    <meta
+      property="og:description"
+      content="Full-stack development. Real-time systems. Thoughtful interfaces. Explore my selected work."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/social-card.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="/theme.js"></script>
+    <title>Yash Goel — Full-stack Developer</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="header">
+      <a class="wordmark" href="#" aria-label="Yash Goel home"
+        >YG<span>✳︎</span></a
+      >
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#work">Selected work <span>03</span></a
+        ><a href="#about">About me</a><a href="#stack">My toolkit</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="theme-toggle"
+          aria-label="Switch to dark theme"
+          title="Change theme"
+        >
+          ◐</button
+        ><a class="button button-small" href="mailto:goelyash749@gmail.com"
+          >Let’s talk <span>↗</span></a
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-top">
+          <span><i class="status-dot"></i> OPEN TO GRADUATE SOFTWARE ROLES</span
+          ><span>BASED IN INDIA · BUILDING FOR THE WEB</span>
+        </div>
+        <div class="hero-main">
+          <div class="hero-copy">
+            <p class="eyebrow">HEY THERE, I’M YASH GOEL</p>
+            <h1 id="hero-title">
+              CODE WITH<br /><span class="outline-type">PURPOSE.</span
+              ><span class="title-star" aria-hidden="true">✳︎</span>
+            </h1>
+            <p class="hero-description">
+              I turn complex problems into thoughtful digital experiences.
+              Full-stack developer with a thing for real-time systems and the
+              details that make them work.
+            </p>
+            <div class="hero-links">
+              <a class="button" href="#work">Explore my work <span>↘</span></a
+              ><a class="text-link" href="/Yash_Goel_Resume.pdf" download
+                >Download résumé <span>↓</span></a
+              >
+            </div>
+          </div>
+          <div class="portrait-composition">
+            <span class="portrait-arc" aria-hidden="true"></span>
+            <div class="portrait-frame">
+              <img
+                src="/yash-portrait.webp"
+                width="448"
+                height="660"
+                alt="Yash Goel wearing a suit on the Chandigarh University campus"
+                fetchpriority="high"
+              />
+              <div class="portrait-caption">
+                <span>YASH GOEL</span><span>DEVELOPER & PROBLEM SOLVER</span>
+              </div>
+            </div>
+            <div class="floating-tag tag-code">
+              <span class="tag-icon">&lt;/&gt;</span>
+              <div>
+                Built to work.<br /><strong>Designed to matter.</strong>
+              </div>
+            </div>
+            <div class="floating-tag tag-location">
+              <span>↗</span> A LITTLE CURIOSITY.<br />
+              A LOT OF BUILDING.
+            </div>
+            <span class="portrait-note">LESS TALK. MORE COMMIT.</span>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>REACT / NEXT.JS / TYPESCRIPT / NODE.JS</span
+          ><a href="#work">SCROLL TO EXPLORE <span>↓</span></a>
+        </div>
+      </section>
+      <div class="ticker">
+        <div aria-hidden="true">
+          FULL-STACK DEVELOPMENT <span>✳︎</span> REAL-TIME COLLABORATION
+          <span>✳︎</span> PROBLEM SOLVING <span>✳︎</span> THOUGHTFUL INTERFACES
+          <span>✳︎</span> FULL-STACK DEVELOPMENT <span>✳︎</span> REAL-TIME
+          COLLABORATION <span>✳︎</span> PROBLEM SOLVING <span>✳︎</span> THOUGHTFUL
+          INTERFACES <span>✳︎</span>
+        </div>
+        <button
+          class="motion-toggle"
+          aria-label="Pause moving banner"
+          aria-pressed="false"
+        >
+          Ⅱ
+        </button>
+      </div>
+      <section
+        id="work"
+        class="section work-section"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span>01 /</span> SELECTED WORK</p>
+            <h2 id="work-title">
+              NOT JUST IDEAS.<br /><span class="muted">SHIPPED PROJECTS.</span>
+            </h2>
+          </div>
+          <p>
+            From a shared document to a shorter link.<br />Real problems.
+            End-to-end solutions.
+          </p>
+        </div>
+        <div class="project-filters" aria-label="Filter projects">
+          <button data-filter="all" aria-pressed="true">
+            All projects <span>03</span></button
+          ><button data-filter="real-time" aria-pressed="false">
+            Real-time</button
+          ><button data-filter="backend" aria-pressed="false">
+            Backend & APIs</button
+          ><button data-filter="commerce" aria-pressed="false">
+            E-commerce
+          </button>
+        </div>
+        <div class="project-grid" id="project-grid"><!-- project-cards --></div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+        <noscript
+          ><p>
+            Explore my projects on
+            <a href="https://github.com/yashgoel-749">GitHub</a>: SyncSave,
+            LinkFlow, and Amazon Clone. Enable JavaScript to explore their case
+            studies here.
+          </p></noscript
+        >
+        <a
+          class="all-code"
+          href="https://github.com/yashgoel-749?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          >There’s more where that came from.
+          <strong>Explore my GitHub ↗</strong></a
+        >
+      </section>
+      <section
+        id="about"
+        class="section about-section"
+        aria-labelledby="about-title"
+      >
+        <div class="about-intro reveal">
+          <p class="eyebrow"><span>02 /</span> THE PERSON BEHIND THE CODE</p>
+          <h2 id="about-title">
+            CURIOUS MIND.<br />BUILDER’S
+            <span class="yellow-type">INSTINCT.</span>
+          </h2>
+          <div class="about-body">
+            <div class="about-symbol" aria-hidden="true">✳︎</div>
+            <div>
+              <p>
+                I’m Yash, a Computer Science & Engineering student at Chandigarh
+                University. I enjoy figuring out what happens beneath a polished
+                interface—and building both sides of it.
+              </p>
+              <p>
+                My work spans collaborative editors, link analytics, and
+                shopping experiences. I care about reliable data, clear APIs,
+                and interfaces that feel effortless.
+              </p>
+              <a
+                href="/Yash_Goel_Resume.pdf"
+                target="_blank"
+                rel="noopener"
+                class="text-link"
+                >The full story, in one page <span>↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="stats-grid reveal">
+          <div>
+            <strong>300<span>+</span></strong>
+            <p>DSA problems solved</p>
+            <small>LeetCode · Codeforces · GeeksforGeeks</small>
+          </div>
+          <div>
+            <strong>8.5<span>/10</span></strong>
+            <p>Academic CGPA</p>
+            <small>B.E. Computer Science & Engineering</small>
+          </div>
+          <div>
+            <strong>02</strong>
+            <p>Hackathon podium finishes</p>
+            <small>Hackshastra 2.0 · Technicia ’25</small>
+          </div>
+          <div>
+            <strong>2027</strong>
+            <p>Expected graduation</p>
+            <small>Chandigarh University · May</small>
+          </div>
+        </div>
+      </section>
+      <section
+        id="stack"
+        class="section stack-section"
+        aria-labelledby="stack-title"
+      >
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span>03 /</span> MY TOOLKIT</p>
+            <h2 id="stack-title">
+              THE RIGHT TOOLS.<br /><span class="muted"
+                >THE RIGHT REASONS.</span
+              >
+            </h2>
+          </div>
+          <p>Not a wall of logos.<br />The technologies I build with.</p>
+        </div>
+        <div class="toolkit-grid reveal">
+          <article>
+            <span class="tool-icon">{ }</span>
+            <h3>Interfaces that feel right.</h3>
+            <p>
+              Responsive applications, reusable components, and thoughtful
+              client-side state.
+            </p>
+            <div class="tech-tags">
+              <span>React</span><span>Next.js</span><span>TypeScript</span
+              ><span>Tailwind CSS</span>
+            </div>
+            <span class="tool-number">01 / FRONTEND</span>
+          </article>
+          <article>
+            <span class="tool-icon">↔</span>
+            <h3>Systems that hold up.</h3>
+            <p>
+              APIs, access control, real-time communication, and persistent
+              data.
+            </p>
+            <div class="tech-tags">
+              <span>Node.js</span><span>Express</span><span>PostgreSQL</span
+              ><span>Redis</span><span>Prisma</span><span>Yjs</span>
+            </div>
+            <span class="tool-number">02 / BACKEND & DATA</span>
+          </article>
+          <article>
+            <span class="tool-icon">⌘</span>
+            <h3>Confidence before shipping.</h3>
+            <p>
+              Automated checks, reproducible environments, and algorithmic
+              problem solving.
+            </p>
+            <div class="tech-tags">
+              <span>Playwright</span><span>Jest</span><span>Docker</span
+              ><span>Git</span><span>C++</span><span>Python</span>
+            </div>
+            <span class="tool-number">03 / ENGINEERING</span>
+          </article>
+        </div>
+      </section>
+      <section class="section journey-section" aria-labelledby="journey-title">
+        <div class="journey-heading reveal">
+          <p class="eyebrow"><span>04 /</span> ALWAYS LEVELING UP</p>
+          <h2 id="journey-title">
+            A LITTLE COMPETITION.<br />A LOT OF CURIOSITY.
+          </h2>
+          <p>Learning by building, competing, and showing up.</p>
+          <div class="coding-links">
+            <a
+              href="https://leetcode.com/u/goelyash749/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LeetCode ↗</a
+            ><a
+              href="https://codeforces.com/profile/yashgoel__"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Codeforces ↗</a
+            >
+          </div>
+        </div>
+        <div class="achievement-list reveal">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Hackshastra 2.0</h3>
+              <p>2nd Runner-up · National-level hackathon</p>
+            </div>
+            <span class="achievement-arrow">↗</span>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Technicia ’25</h3>
+              <p>1st Runner-up · Hackathon</p>
+            </div>
+            <span class="achievement-arrow">↗</span>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Aptitude Wizard · Season 22</h3>
+              <p>Top 5 among 200+ participants</p>
+            </div>
+            <span class="achievement-arrow">↗</span>
+          </article>
+          <article>
+            <span>04</span>
+            <div>
+              <h3>Keep learning. Keep building.</h3>
+              <p>
+                HackerRank: DSA & SQL (Intermediate)<br />NPTEL: Cloud Computing
+                · IIT Kharagpur
+              </p>
+            </div>
+            <span class="achievement-arrow">✳︎</span>
+          </article>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="section contact-section"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-top">
+          <p class="eyebrow">HAVE AN OPPORTUNITY OR AN INTERESTING IDEA?</p>
+          <span><i class="status-dot"></i> LET’S CONNECT</span>
+        </div>
+        <div class="contact-title-row">
+          <h2 id="contact-title">
+            GOOD THINGS START<br />WITH <span>A HELLO.</span>
+          </h2>
+          <a
+            class="contact-orb"
+            href="mailto:goelyash749@gmail.com"
+            aria-label="Email Yash"
+            >↗</a
+          >
+        </div>
+        <div class="contact-bottom">
+          <div>
+            <p>New challenges. Thoughtful teams. Meaningful work.</p>
+            <a class="email-link" href="mailto:goelyash749@gmail.com"
+              >goelyash749@gmail.com</a
+            ><button
+              class="copy-email"
+              aria-label="Copy email address"
+              title="Copy email address"
+            >
+              ⧉</button
+            ><span id="copy-status" class="copy-status" role="status"></span>
+          </div>
+          <a class="text-link" href="/Yash_Goel_Resume.pdf" download
+            >Grab my résumé <span>↓</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="wordmark" href="#" aria-label="Yash Goel home"
+        >YG<span>✳︎</span></a
+      >
+      <p>© <span id="year">2026</span> Yash Goel. Built with intention.</p>
+      <div>
+        <a
+          href="https://github.com/yashgoel-749"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub ↗</a
+        ><a
+          href="https://linkedin.com/in/yash-goel-633446277"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn ↗</a
+        ><a href="#">Back to top ↑</a>
+      </div>
+    </footer>
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" aria-label="Close case study">✕</button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
