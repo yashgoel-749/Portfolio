@@ -46,7 +46,7 @@ To format source files, run `npm run format`.
 3. Use `npm run build` as the build command and `dist` as the output directory.
 4. If you change the public domain, update the canonical, Open Graph, and Twitter image URLs in `index.html`, plus the URL in `scripts/verify_live.mjs` and `tests/metadata.spec.js`.
 
-The portfolio is live at [portfolio-six-beryl-65.vercel.app](https://portfolio-six-beryl-65.vercel.app/). Run `npm run verify:live` after deployment to check its metadata, assets, project dialogs, theme, mobile navigation, and resume.
+The portfolio is live at [goel-yash-homeground.vercel.app](https://goel-yash-homeground.vercel.app/). Run `npm run verify:live` after deployment to check its metadata, assets, project dialogs, theme, mobile navigation, and resume.
 
 On Vercel, `vercel.json` sets security headers and long-lived caching for content-hashed assets. GitHub Actions runs the verification suite on pushes to `main` and on pull requests.
 

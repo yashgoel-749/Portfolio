@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { chromium } from "@playwright/test";
 
-const site = "https://portfolio-six-beryl-65.vercel.app/";
+const site = "https://goel-yash-homeground.vercel.app/";
 const browser = await chromium.launch();
 try {
   const page = await browser.newPage();

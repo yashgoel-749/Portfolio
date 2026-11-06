@@ -4,7 +4,7 @@ test("search and sharing metadata use the public deployment and a valid image", 
   page,
 }) => {
   await page.goto("/");
-  const site = "https://portfolio-six-beryl-65.vercel.app/";
+  const site = "https://goel-yash-homeground.vercel.app/";
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     "href",
     site,
