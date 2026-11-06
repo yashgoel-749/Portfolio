@@ -45,4 +45,4 @@ The Amazon Clone demo returned HTTP 451 with `DEPLOYMENT_DISABLED` on November 6
 
 ## Risks
 
-External demos can sleep or become unavailable; source links remain available. A published canonical URL must be added after deployment.
+External demos can sleep or become unavailable; source links remain available. The canonical URL and sharing-image URLs now use `https://portfolio-six-beryl-65.vercel.app/`. If the domain changes, those metadata URLs and the live verification script need the new address.

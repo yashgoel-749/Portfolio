@@ -9,6 +9,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "playwright test",
     "check:links": "node scripts/check_links.mjs",
+    "verify:live": "node scripts/verify_live.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "verify": "npm run format:check && npm run build && npm test"
